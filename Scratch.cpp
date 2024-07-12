@@ -1,10 +1,11 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int a = 0;
-    int b = 1;
-    cout<<bool(a)<<endl;
-    cout<<bool(b)<<endl;
+int main()
+{
+    int32_t a = INT32_MIN;
+    uint32_t b = a;
+    cout << b << "\n"
+         << a;
     return 0;
 }

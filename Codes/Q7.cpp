@@ -19,11 +19,11 @@ int reverse(int x)
     }
     while (!q.empty())
     {
-        if (negative && ans > INT32_MIN / 10)
+        if (negative && ans >= INT32_MIN / 10)
         {
             ans = ans * 10 - q.front();
         }
-        else if (!negative && ans < INT32_MAX / 10)
+        else if (!negative && ans <= INT32_MAX / 10)
         {
             ans = ans * 10 + q.front();
         }
@@ -39,7 +39,7 @@ int reverse(int x)
 
 int main()
 {
-    int x = -2147483412;
+    int x = 1463847412;
     cout << reverse(x) << endl;
     return 0;
 }
