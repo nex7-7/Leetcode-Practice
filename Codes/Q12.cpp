@@ -27,7 +27,6 @@ string intToRoman(int num)
         else if (digit == 9)
         {
             set = store[i][0];
-            set = set + store[i][2];
         }
         roman = set + roman;
         if (num != 0)
